@@ -1,0 +1,30 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    @media (max-width: 751px) {
+        display: block;
+        text-align: center;
+    }
+    span:first-child {
+        background: linear-gradient(to right, #935dd6, #21a5c9); /* Blue gradient from left to right */
+        color: transparent; /* Make the text color transparent */
+        background-clip: text; /* Clip the background to the text content */
+    }
+    span {
+        @media (max-width: 751px) {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    &__social i {
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &:nth-child(2) {
+            margin-left: 15px;
+        }
+    }
+}
