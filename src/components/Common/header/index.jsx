@@ -13,6 +13,10 @@ const HeaderCommon = () => {
         label: 'Technologies',
       },
       {
+        href: 'projects',
+        label: 'Project',
+      },
+      {
         href: 'work-experience',
         label: 'Work Experience',
       },
