@@ -28,7 +28,7 @@ export const CardComponent = () => {
             <div style={cardStyle} onClick={handleCardClick}>
                 <div style={headerStyle}>
                     <img
-                        src="../../../public/pdf_logo.png"
+                        src="../../../pdf_logo.png"
                         alt="logo"
                         style={logoStyle}
                     />
