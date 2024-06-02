@@ -41,17 +41,23 @@ export const CardComponent = () => {
                     <span style={chipStyle}>Android</span>
                     <span style={chipStyle}>Kotlin</span>
                     <span style={chipStyle}>CustomView</span>
+                    <span style={chipStyle}>Coroutine</span>
+                    <span style={chipStyle}>Live Data</span>
                 </div>
             </div>
 
             {isPopupOpen && (
                 <div style={popupOverlayStyle} onClick={handleClosePopup}>
                     <div style={popupContentStyle}>
-                        <img
+                        {/* <img
                             src="../../../project_pdf_maker.gif"
                             alt="Popup"
                             style={popupImageStyle}
-                        />
+                        /> */}
+                        <video style={popupImageStyle} controls>
+                            <source src="../../../pdf_video.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                         <button onClick={handleClosePopup} style={closeButtonStyle}>x</button>
                     </div>
                 </div>
@@ -96,13 +102,18 @@ const bodyStyle = {
 const footerStyle = {
     display: 'flex',
     justifyContent: 'flex-start',
+    flexWrap: 'wrap', // Cho phép các chip tự động xuống dòng
 };
 
 const chipStyle = {
     backgroundColor: 'black',
+    color: 'white', // Thêm màu chữ để dễ đọc hơn
     borderRadius: '16px',
     padding: '8px 12px',
     marginRight: '8px',
+    marginBottom: '8px', // Thêm khoảng cách dưới để các hàng cách nhau
+    display: 'flex', // Đảm bảo nội dung bên trong chip được căn chỉnh chính xác
+    alignItems: 'center',
 };
 
 const popupOverlayStyle = {
