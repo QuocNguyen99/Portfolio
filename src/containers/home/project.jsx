@@ -49,12 +49,7 @@ export const CardComponent = () => {
             {isPopupOpen && (
                 <div style={popupOverlayStyle} onClick={handleClosePopup}>
                     <div style={popupContentStyle}>
-                        {/* <img
-                            src="../../../project_pdf_maker.gif"
-                            alt="Popup"
-                            style={popupImageStyle}
-                        /> */}
-                        <video playsInline style={popupImageStyle} controls webkit-playsinline="true" playsinline="true">
+                        <video style={popupImageStyle} playsInline={true} autoPlay={true} loop={true}>
                             <source src="../../../pdf_video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>

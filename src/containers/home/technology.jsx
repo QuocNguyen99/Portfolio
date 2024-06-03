@@ -54,10 +54,10 @@ export function Technology() {
 
   const handleMore = (more) => {
     if (more !== 'More...') return;
-    const pdfUrl = './HuyNguyen.pdf';
+    const pdfUrl = './HuynhQuocNguyen.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'HuyNguyen.pdf'; // specify the filename
+    link.download = 'HuynhQuocNguyen.pdf'; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
