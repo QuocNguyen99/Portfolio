@@ -54,7 +54,7 @@ export const CardComponent = () => {
                             alt="Popup"
                             style={popupImageStyle}
                         /> */}
-                        <video playsInline style={popupImageStyle} controls>
+                        <video playsInline style={popupImageStyle} controls webkit-playsinline="true" playsinline="true">
                             <source src="../../../pdf_video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
