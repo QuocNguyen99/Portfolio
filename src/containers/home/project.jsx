@@ -54,10 +54,14 @@ export const CardComponent = () => {
                             alt="Popup"
                             style={popupImageStyle}
                         /> */}
-                        <video style={popupImageStyle} controls>
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: ` <video style={popupImageStyle} controls>
                             <source src="../../../pdf_video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
-                        </video>
+                        </video>`,
+                            }}
+                        />
                         <button onClick={handleClosePopup} style={closeButtonStyle}>x</button>
                     </div>
                 </div>
