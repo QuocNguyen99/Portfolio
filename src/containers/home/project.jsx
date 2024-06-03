@@ -75,7 +75,7 @@ const cardStyle = {
     borderRadius: '8px',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     padding: '16px',
-    margin: '16px',
+    margin: '0px 16px',
     cursor: 'pointer',
     width: '300px',
     display: 'flex',
